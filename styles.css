@@ -1,0 +1,65 @@
+/* Fondo de la página de inicio */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('img/FondoPrincipal.jpg') no-repeat center center/cover;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Fondo de la página de nosotros */
+.hero-nosotros {
+   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('img/FondoPrincipal.jpg') no-repeat center center/cover;
+ 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Sombras para que el texto resalte */
+.hero h1, .hero-nosotros h1 {
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.0);
+}
+
+.hero p, .hero-nosotros p {
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.hero-nosotros h1 {
+  font-family: 'Road Rage', cursive;
+  font-size: 4rem;   /* ajusta el tamaño a gusto */
+  font-weight: normal; /* Road Rage ya tiene estilo grueso */
+}
+
+.hero-nosotros p {
+  font-size: 1.5rem;  /* por defecto suele estar en 1rem (16px) */
+  line-height: 1.8;   /* mejora la separación entre líneas */
+}
+
+.navbar {
+  height: 70px; /* altura fija del navbar */
+  padding: 0 1rem;
+}
+
+.navbar-brand {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-brand img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-35%); /* centra el logo */
+  height: 200px;   /* tamaño del logo */
+  width: auto;    /* mantiene proporción */
+}
